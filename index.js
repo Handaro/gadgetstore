@@ -26,6 +26,7 @@ const corsOptions = {
     "http://localhost:8000",
     "http://localhost:3000",
     "http://zuitt-bootcamp-prod-481-7888-parpan.s3-website.us-east-1.amazonaws.com",
+    "https://gadgetstore-mern.vercel.app",
   ],
   credentials: true,
   optionsSuccessStatus: 200,
