@@ -25,7 +25,6 @@ const corsOptions = {
   origin: [
     "http://localhost:8000",
     "http://localhost:3000",
-    "http://zuitt-bootcamp-prod-481-8063-teves.s3-website.us-east-1.amazonaws.com",
     "http://zuitt-bootcamp-prod-481-7888-parpan.s3-website.us-east-1.amazonaws.com",
   ],
   credentials: true,
@@ -34,10 +33,10 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.use("/b6/users", userRoutes);
-app.use("/b6/products", productRoutes);
-app.use("/b6/cart", cartRoutes);
-app.use("/b6/orders", orderRoutes);
+app.use("/users", userRoutes);
+app.use("/products", productRoutes);
+app.use("/cart", cartRoutes);
+app.use("/orders", orderRoutes);
 
 if (require.main === module) {
   app.listen(process.env.PORT, () =>
